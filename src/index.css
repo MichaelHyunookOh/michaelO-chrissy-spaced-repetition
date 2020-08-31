@@ -1,7 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Permanent+Marker&family=Shojumaru&display=swap');
+
+#root {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+html { 
+  background: url("./img/background_jungle_master2_2070.png") no-repeat 
+    center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 * {
   box-sizing: border-box;
+}
+
+section {
+  background-color: white;
+  border: solid 1px;
+  margin-top: 1rem;
+  padding: 15px;
+}
+
+nav {
+  padding: 2rem;
+}
+
+form {
+  padding: 2rem;
 }
 
 body {

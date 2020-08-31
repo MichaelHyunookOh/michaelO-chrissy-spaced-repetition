@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import TokenService from '../../services/token-service'
 import UserContext from '../../contexts/UserContext'
+import hozenlogo from "../../img/hozenlogo.png"
 import './Header.css'
 
 class Header extends Component {
@@ -13,7 +14,7 @@ class Header extends Component {
 
   renderLogoutLink() {
     return (
-      <div>
+      <div className="Header">
         <span>
           {this.context.user.name}
         </span>
@@ -43,7 +44,7 @@ class Header extends Component {
       <header>
         <h1>
           <Link to='/'>
-            Spaced repetition
+            <img src={hozenlogo} alt="logo"/>
           </Link>
         </h1>
         {TokenService.hasAuthToken()
