@@ -53,6 +53,32 @@ class LearningRoute extends Component {
     });
   };
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    fetch(`${config.API_ENDPOINT}/language/guess`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${TokenService.getAuthToken()}`,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ guess: this.state.guess }),
+    })
+      .then((res) =>
+        !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
+      )
+      .then((data) => {
+        this.setState({
+          answer: data.answer,
+          isCorrect: data.isCorrect,
+          head: data.nextWord,
+          total: data.totalScore,
+          wordCorrectCount: data.wordCorrectCount,
+          wordIncorrectCount: data.wordIncorrectCount,
+          currWord: this.state.head,
+        });
+      });
+  };
+
   render() {
     let result;
     if (this.state.isCorrect === true) {
