@@ -122,7 +122,12 @@ class LearningRoute extends Component {
         </div>
 
         {!this.state.answer ? (
-          <form className="guess-form">
+          <form
+            className="guess-form"
+            onSubmit={(e) => {
+              this.handleSubmit(e);
+            }}
+          >
             <Label htmlFor="guess-input" className="guess-label">
               Translate the word!
             </Label>
@@ -142,6 +147,19 @@ class LearningRoute extends Component {
           <Button className="next-button" onClick={this.handleNext}>
             Next Word
           </Button>
+        )}
+
+        {!this.state.answer ? (
+          <div>
+            <p className="word-scores">
+              Times Answered Correctly: {this.state.wordCorrectCount}
+            </p>
+            <p className="word-scores">
+              Times Answered Incorrectly: {this.state.wordIncorrectCount}
+            </p>
+          </div>
+        ) : (
+          <p className="message">Nice Work! Keep Practicing!</p>
         )}
       </section>
     );
