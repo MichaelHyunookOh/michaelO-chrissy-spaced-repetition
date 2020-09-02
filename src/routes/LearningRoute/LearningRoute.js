@@ -4,6 +4,7 @@ import config from "../../config";
 import { Input, Label } from "../../components/Form/Form";
 import Button from "../../components/Button/Button";
 import TokenService from "../../services/token-service";
+import hozenSpeaks from "../../img/hozenspeaks.gif";
 
 class LearningRoute extends Component {
   state = {
@@ -85,6 +86,11 @@ class LearningRoute extends Component {
       result = (
         <>
           <h2 className="correct-prompt">You are correct!</h2>
+          <img
+            src={hozenSpeaks}
+            alt="animated hozen"
+            className="resultsHozen"
+          />
           <p className="correct-answer-prompt">
             The correct translation for {this.state.currWord} was{" "}
             {this.state.answer} and you chose {this.state.guess}!
@@ -96,6 +102,11 @@ class LearningRoute extends Component {
       result = (
         <>
           <h2 className="incorrect-prompt">Good try, but not quite right</h2>
+          <img
+            src={hozenSpeaks}
+            alt="hozen animation"
+            className="resultsHozen"
+          />
           <p className="correct-answer-prompt">
             The correct translation for {this.state.currWord} was{" "}
             {this.state.answer} and you chose {this.state.guess}!
