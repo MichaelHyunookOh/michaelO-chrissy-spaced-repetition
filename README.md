@@ -1,4 +1,14 @@
-# Spaced Repetition Capstone
+# Spaced Repetition Capstone - Wikket's Guide to Hozen
+
+Application completed by Michael Oh and Chrissy Harmon.
+
+Live Site: https://guide-to-hozen.vercel.app/register
+
+API Repo: https://github.com/charmonica/michaelO-chrissy-spaced-repetition-api
+
+## About
+
+Wikket's Guide to Hozen is a spaced repetititon application implemented with Javascript. The app uses a singly linked list to cycle through questions, showing words that have been answered incorrectly more often than those answered correctly. The base language used is a silly send-up to World of Warcraft, featuring the Hozen.
 
 ## Setup
 
@@ -45,3 +55,7 @@ npm run cypress:run
 ```
 
 This will save video recordings of the test runs in the directory `./cypress/videos/`.
+
+# Screenshots
+
+

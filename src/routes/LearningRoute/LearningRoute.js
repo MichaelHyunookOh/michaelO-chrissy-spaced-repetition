@@ -48,9 +48,8 @@ class LearningRoute extends Component {
 
   handleInput = (e) => {
     const guess = e.target.value;
-    let lowerCase = guess.toLowerCase();
     this.setState({
-      guess: lowerCase,
+      guess: guess,
     });
   };
 
