@@ -56,6 +56,22 @@ npm run cypress:run
 
 This will save video recordings of the test runs in the directory `./cypress/videos/`.
 
-# Screenshots
+## Screenshots
+
+# Registration
+
+![Registration](./ReadmeImg/signup.png)
+
+# Login
+
+![Login](./ReadmeImg/login.png)
+
+# Dashboard (partial)
+
+![Dashboard](./ReadmeImg/dashboard.png)
+
+# Learning
+
+![Learning](./ReadmeImg/learning.png)
 
 
