@@ -10,6 +10,10 @@ API Repo: https://github.com/charmonica/michaelO-chrissy-spaced-repetition-api
 
 Wikket's Guide to Hozen is a spaced repetititon application implemented with Javascript. The app uses a singly linked list to cycle through questions, showing words that have been answered incorrectly more often than those answered correctly. The base language used is a silly send-up to World of Warcraft, featuring the Hozen.
 
+## Stack
+
+ReactJS, CSS3
+
 ## Setup
 
 To setup the application
