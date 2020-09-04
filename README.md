@@ -68,7 +68,7 @@ This will save video recordings of the test runs in the directory `./cypress/vid
 
 # Dashboard (partial)
 
-![Dashboard](./ReadmeImg/dashboardpartial.png)
+![Dashboard](./ReadmeImg/partialdashboard.png)
 
 # Learning
 
