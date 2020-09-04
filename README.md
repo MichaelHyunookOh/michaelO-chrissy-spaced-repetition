@@ -6,6 +6,12 @@ Live Site: https://guide-to-hozen.vercel.app/register
 
 API Repo: https://github.com/charmonica/michaelO-chrissy-spaced-repetition-api
 
+Demo Login Credentials:
+
+Username: Thinkful
+
+Password: Thinkful123!
+
 ## About
 
 Wikket's Guide to Hozen is a spaced repetititon application implemented with Javascript. The app uses a singly linked list to cycle through questions, showing words that have been answered incorrectly more often than those answered correctly. The base language used is a silly send-up to World of Warcraft, featuring the Hozen.
@@ -19,7 +25,7 @@ ReactJS, CSS3
 To setup the application
 
 1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+2. `npm install`. This will also install the application _Cypress.io_ for running browser integration tests
 
 The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
 
@@ -77,5 +83,3 @@ This will save video recordings of the test runs in the directory `./cypress/vid
 # Learning
 
 ![Learning](./ReadmeImg/learning.png)
-
-
